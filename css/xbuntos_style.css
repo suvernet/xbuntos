@@ -1,0 +1,461 @@
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:    Minimalist design
+Designer: Vicktor Suver
+URL:      https://suver.ru
+----------------------------------------------- */ 
+* {
+	margin: 0;
+    padding: 0;	
+}
+a {
+	text-decoration: none;
+	color: #17A0CD;
+}
+body {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+	font: 0.95em "Helvetica Neue", Helvetica, Arial, sans-seri;
+	background: #f2f3f4;
+	color: #494949;
+}
+
+/*----- HEADER -----*/
+header {
+	width: 100%;
+	height: 45px;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    	background: #262933;
+	position: fixed;
+	top: 0; left: 0;
+	transition: all .3s ease;
+	z-index: 99;
+}
+header.out {
+	transform: translateY(-100%);
+}
+header, header a {
+	color: #fff;
+}
+.header {
+    margin-left: 40px;
+}
+.header a {
+	display: flex;
+}
+h1 {
+	font-size: 1.4em;
+	color: #fff;
+	margin-left: 10px;
+}
+img.logo {
+    width: 25px;
+    height: 25px;
+}
+.menu {
+    margin-right: 40px;
+}
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul {
+    display: flex;
+    margin-right: 75px;
+}
+.menu .icon {
+	display: none;
+}
+
+/*----- CONTENT -----*/
+.content {
+	width: 1300px;
+	margin: 45px auto;
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+
+/*----- MAIN -----*/
+main {
+    width: 70%;
+    margin-bottom: 40px;
+}
+#main_block {
+    width: 90%;
+}
+#Blog1 {
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+/*----- POST -----*/
+h2.date-header {
+    font-size: .75em;
+    color: #17A0CD;
+    margin-left: 21px;
+}
+.date-header:before {
+    content: '\f073';
+    font-family: 'FontAwesome';
+    position: relative;
+    top: -2px;
+    left: -5px;
+    color: #17A0CD;
+}
+h3.post-title.entry-title {
+    font-size: 1.5em;
+    color: #3d4956;
+}
+h3.post-title.entry-title a {    
+    color: #3d4956;
+}
+span.fn {
+    color: #17A0CD;
+}
+span.post-author.vcard {
+    font-size: .75em;
+}
+.post-outer {
+    position: relative;
+    border-top: 1px solid #cfcfcf;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.post-outer:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 200px;
+    height: 8px;
+    background: linear-gradient(193deg, transparent 20px, #697889 0);
+    left: 0;
+    top: -8px;
+}
+
+.post-footer {
+	position: relative;
+	font-size: .75em;
+	margin-top: 15px;
+}
+.post-body img {
+    max-width: 100%;
+    height: auto;
+}
+.post-comment-link {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.feed-links {
+    font-size: .75em;
+}
+.jump-link a {
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+/*----- COMMENT -----*/
+.comment-header {
+    font-size: .75em;
+}
+span.comment-actions.secondary-text, span.thread-count, .continue {
+    font-size: .9em;
+}
+a.comment-reply {
+    margin-right: 20px;
+}
+.comments .comment-block {
+    margin-left: 55px;
+    position: relative;
+}
+.comments .avatar-image-container img {
+    max-width: 45px;
+    border-radius: 50%;
+}
+
+.comments .comments-content .icon.user.blog-author {
+    display: inline-block;
+    height: 18px;
+    margin: 0 0 -4px 6px;
+    width: 39px;
+}
+.comments .comments-content .icon.blog-author:after {
+    content: "Autor";
+    font-family: 'Roboto Condensed';
+    font-size: .8em;
+    color: #e4f0f3;
+    background: #537880;
+    padding: 1px 8px;
+    border-radius: 20px;
+}
+
+
+
+/*----- ASIDE -----*/
+aside {
+    width: 25%;
+    padding: 20px;
+    margin-top: 40px;
+}
+aside .widget h2 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.BlogArchive li:before,.Label li:before {
+    content: '\f178';
+    font-family: 'FontAwesome';
+    position: relative;
+    top: 0;
+    padding-right: 10px;
+    color: #535859;
+    font-size: .75em
+}
+.blog-list-container .blog-title {
+    font-weight: normal !important;
+}
+.widget li {
+    padding: .10em;
+}
+.widget ul {
+    padding: 0;
+}
+
+/*----- FOOTER -----*/
+footer {
+	width: 100%;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: .75em;
+	color: #fff;
+	background-color: #262933;
+}
+footer p {
+    padding-top: 13px;
+}
+
+/*----- Картинки в комментах -----*/
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+}
+img.image {
+    width: 100% !important;	
+}
+
+/*----- ВИДЖЕТЫ -----*/
+
+#PopularPosts1 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+/*--------- ЦИТАТЫ ----------*/
+
+blockquote:before {
+    content: '\f10d';
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 1.1em;
+    color: #eee;
+    position: absolute;
+    top: -3px;
+    left: -20px;
+}
+pre:before {
+    content: '\f121';
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 1.1em;
+    color: #eee;
+    position: absolute;
+    top: -3px;
+    left: -22px;
+}
+.fa-files-o {
+    font-style: normal;
+    font-size: 1.1em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.fa-files-o:hover {
+    cursor: pointer;
+}
+.fa-files-o:active {
+    font-size: 1.3em;
+}
+blockquote {
+    width: 88%;
+    padding: 20px;
+    font-size: .91em;
+    font-style: italic;
+    border: 1px solid #e0e0e0;
+    border-left: 25px solid #262933;
+    background: #f2f3f4;
+    margin: 0 auto;
+    position: relative;
+	box-sizing: border-box;
+}
+pre {
+    width: 90%;
+    padding: 20px 0 20px 10px;
+    font-size: 1.05em;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+    border-left: 25px solid #262933;
+    background: #f2f3f4;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+	white-space: pre-wrap;
+}
+
+/*---------- КНОПКА СКАЧАТЬ ---------*/
+button.btn {
+    padding: 5px 10px;
+    color: whitesmoke;
+    background: coral;
+    border: 1px solid #bb4013;
+    border-radius: 5px;
+}
+
+/*-------------- SEARCH  ----------------*/
+input.gsc-input {
+    padding: 7px 11px;
+    border: 1px solid #ddd;
+    width: 99%;
+    box-sizing: border-box;
+}
+input.gsc-search-button {
+    padding: 7px 10px;
+    background: #4486f4;
+    border: 1px solid #1b51ad;
+    color: aliceblue;
+}
+table.gsc-search-box td.gsc-input {
+    padding-right: 0px;
+}
+
+/*------------------ MEDIA QUERIES ----------------------*/
+@media (max-width: 769px) {
+main {
+    width: 99%;
+    margin: 0;
+}
+aside {
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+#main_block {
+    width: 96.5%;
+}
+#Subscribe {
+    background: #f5f5f5 url(https://4.bp.blogspot.com/-dNXIw_83Ljs/UNbTlQJ_kWI/AAAAAAAABig/K65wcKzaVwI/s1600/email.png) no-repeat top 43px right 20px;
+    border: 1px solid #ccc;
+    height: 100px;
+    margin: 45px auto 0;
+    padding: 10px;
+    width: 580px;
+    max-width: 100%;
+}
+.header {
+    width: 100%;
+}
+.menu {
+    margin-right: 20px;
+}
+.menu ul {
+    display:none;
+}
+
+.menu a.icon {
+   float: right;
+   margin-top: 0px;
+   display: block;
+   color: #eee;
+   border: none;
+}
+
+.menu.responsive {
+	position: relative;
+	z-index: 112;
+	width: 100%;
+}
+.menu.responsive a.icon {
+	position: absolute;
+	right: 0;
+	top: -9px;
+}
+.menu.responsive ul {
+	width: 200px;
+    	height: 100vh;
+    	display: block;
+    	text-align: left;
+    	position: absolute;
+   	 	top: 22px;
+    	right: -20px;
+    	margin-right: 0;
+    	background: #525558;
+}
+	.menu ul li {
+    	margin-left: 0;
+    	padding: 20px 10px 20px 30px;
+		border-bottom: 1px dotted;
+}
+}
+@media (max-width: 596px) {
+
+#Subscribe tr {
+    	display: flex;
+    	flex-wrap: wrap;
+}
+#Subscribe td {
+    	width: 100%;
+    	margin-top: 20px;
+}
+#Subscribe {
+    	height: 265px !important;
+}
+#Subscribe form input.Button {
+		margin-top: 10px;
+}
+#Subscribe form input.Text {
+    	width: 280px  !important;
+}
+	
+.comment-form {
+    	clear: both;
+    	margin-left: -35px;
+    	margin-right: -35px;
+}
+}
+@media (max-width: 430px) {
+	#Subscribe form input.Text {
+    	width: 170px  !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
