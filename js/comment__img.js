@@ -15,8 +15,8 @@ if (c) {
 };
 
 function replaceneechal() {
-    _str = _str['replace'](/\гЂ€/gi, '<');
-    _str = _str['replace'](/\гЂ‰/gi, '>');
+    _str = _str['replace'](/\lt/gi, '<');
+    _str = _str['replace'](/\rt/gi, '>');
     _str = _str['replace'](/\[im\]/gi, '<img src=\'');
     _str = _str['replace'](/\[im\#\]/gi, '<img width=\'100%\' src=\'');
     _str = _str['replace'](/\[\/im\]/gi, '\' class=\'image\'/>');
