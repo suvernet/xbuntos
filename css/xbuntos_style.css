@@ -131,11 +131,11 @@ span.post-author.vcard {
     position: absolute;
     content: '';
     display: block;
-    width: 200px;
-    height: 8px;
+    width: 320px;
+    height: 5px;
     background: linear-gradient(193deg, transparent 20px, #697889 0);
     left: 0;
-    top: -8px;
+    top: -5px;
 }
 
 .post-footer {
