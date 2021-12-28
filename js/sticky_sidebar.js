@@ -77,18 +77,7 @@ function Ascroll() {
         b.style.top = '';
       }
     }
-    
-    
-let elem = document.querySelector('.sticky');
-elem.style.position = 'fixed';
-elem.style.zIndex = '98';
-
-let elem2 = document.querySelector('.stop');
-elem2.style.position = 'relative';
-elem2.style.zIndex = '98';
-
-
-    
+ 
     window.addEventListener('resize', function() {
       a.children[0].style.width = getComputedStyle(a, '').width
     }, false);
